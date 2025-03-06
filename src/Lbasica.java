@@ -65,7 +65,7 @@ public class Lbasica<T> implements Lista<T> {
     }
 
     @Override
-    public Iterador<T> getIterador() {
+    public IIterador<T> getIterador() {
         IIterador<T> i = new IIterador<T>(elementos);
         return i;
     }
