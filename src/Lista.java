@@ -1,7 +1,7 @@
 public interface Lista<T>{
     boolean add(T elemento);
     boolean delete(T elemento);
-    IIterador<T> getIterador();
+    Iterador<T> getIterador();
     int getNumElementos();
 
 }

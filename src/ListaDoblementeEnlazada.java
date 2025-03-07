@@ -44,15 +44,25 @@ public class ListaDoblementeEnlazada<T> implements Lista<T>{
         return true;
     }
     @Override
-    public IIterador<T> getIterador() {
-        return new IIteradorDobleEnlazada();
+    public Iterador<T> getIterador() {
+        return new IIteradorDobleEnlazada<>(cabeza, cola);
     }
-
     @Override
     public int getNumElementos() {
         return numElementos;
     }
 
+    public ElementoDoble<T> getCabeza() {
+        return cabeza;
+    }
+
+    public ElementoDoble<T> getCola() {
+        return cola;
+    }
+
+    public void setCabeza(ElementoDoble<T> cabeza) {
+        this.cabeza = cabeza;
+    }
 
 
 }

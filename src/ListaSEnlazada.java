@@ -54,8 +54,8 @@ public class ListaSEnlazada<T> implements Lista<T>{
     }
 
     @Override
-    public IIterador<T> getIterador() {
-        return new IIteradorSE<>(cabeza);
+    public Iterador<T> getIterador() {
+        return new IIteradorSE(cabeza);
 
         }
     @Override
